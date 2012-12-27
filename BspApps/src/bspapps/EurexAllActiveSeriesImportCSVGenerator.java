@@ -17,7 +17,7 @@ import javax.xml.stream.events.XMLEvent;
  * CLI Parameter 2: CSV Target File<br>
  * CLI Parameter 3: rewrite XML with line breaks <i>normally true</i>
  * @author rme
- * @version Eurex 14.0
+ * @version Eurex New Trading Architecture V.1.0
  */
 public class EurexAllActiveSeriesImportCSVGenerator {
 
