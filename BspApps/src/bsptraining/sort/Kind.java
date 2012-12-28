@@ -1,8 +1,10 @@
-// BSP 2008
+/**
+ * BSP training Copyright (C) 2008 - 2012
+ */
 package bsptraining.sort;
 
 /**
- * This class demonstrates Comparables.
+ * This class demonstrates Comparables on user-defined types.
  *
  * @author jelsen
  */

@@ -3,15 +3,25 @@
  */
 package bsptraining.classes;
 
+/**
+ * This class demonstrates constants and variables.
+ *
+ * @author jelsen
+ */
 public class DatatypeExample {
-   // Note: Constant values are usually defined first
 
+   /**
+    * Constant values are defined by the key word <b>final</b>. The "const" key
+    * word is not used and cannot be used. Per convention, constant values
+    * <i>should</i> be defined in capital letters. The also <i>should</i> be
+    * defined at first.
+    */
    public static final String CONSTANT_VALUE = "CONSTANT_VALUE";
    private String name;
    private String vorname;
 
    public DatatypeExample(String name) {
-      // constructor
+      // Constructor (the name equals the class name)
       this.name = name;
    }
 

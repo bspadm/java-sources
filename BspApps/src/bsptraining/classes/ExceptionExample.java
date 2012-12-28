@@ -13,7 +13,6 @@ public class ExceptionExample {
          int number = Integer.parseInt(stringAsNumber);
          return number;
       } catch (NumberFormatException e) {
-         e.printStackTrace();
          throw e;
       } finally {
          System.out.println("ExceptionExample.parseString: Parsing done!");

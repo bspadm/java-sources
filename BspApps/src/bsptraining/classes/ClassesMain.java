@@ -4,7 +4,8 @@
 package bsptraining.classes;
 
 /**
- * This runnable class demonstrates base java functionality
+ * This runnable class demonstrates base java functionality.
+ * Testing of package "classes".
  *
  * @author jelsen
  */
@@ -31,6 +32,7 @@ public class ClassesMain {
        */
       ConditionAndLoopExample conditionAndLoopExample = new ConditionAndLoopExample();
       conditionAndLoopExample.doWhileExample(5);
+      conditionAndLoopExample.ifElseExample(1);
 
       /*
        * Overloading

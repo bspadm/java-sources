@@ -4,7 +4,7 @@
 package bsptraining.base;
 
 /**
- * This runnable program shows how to evaluate command line parameters
+ * This runnable program shows how to evaluate command line parameters.
  *
  * @author jelsen
  */

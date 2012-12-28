@@ -3,6 +3,11 @@
  */
 package bsptraining.classes;
 
+/**
+ * This class demonstrates conditions and loops.
+ *
+ * @author jelsen
+ */
 public class ConditionAndLoopExample {
 
    public String ifExample(int number) {
@@ -15,6 +20,30 @@ public class ConditionAndLoopExample {
          msg = "number < 0 oder number >= 10";
       }
       return msg;
+   }
+
+   public void ifElseExample(int number) {
+      String msg;
+      if (number == 0) {
+         msg = "number = 0";
+      } else {
+         msg = "number <> 0";
+      }
+      System.out.println(msg);
+      /*
+       * If-Else can be shortened by assignment.
+       * First there is a boolean term (number == 0) returning true or false
+       * After the "?" always comes the true part
+       * After the ":" always comes the false part
+       * This is called "ternary expression"
+       */
+      msg = (number == 0) ? "number = 0" : "number <> 0";
+      System.out.println(msg);
+      /*
+       * Note that the brackets around the boolean term is optional;
+       * The shortest form therefore would be:
+       */
+      System.out.println(number == 0 ? "number = 0" : "number <> 0");
    }
 
    public String switchExample(char choice) {
@@ -41,7 +70,7 @@ public class ConditionAndLoopExample {
       for (int i = 0; i < chars.length; i++) {
          System.out.println("chars[" + i + "] = " + chars[i]);
       }
-      // for each
+      // "for each" is handy and often used!
       for (char c : chars) {
          System.out.println("ConditionAndLoopExample.forExample: " + c);
       }

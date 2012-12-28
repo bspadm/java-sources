@@ -1,4 +1,6 @@
-// BSP 2008
+/**
+ * BSP training Copyright (C) 2008 - 2012
+ */
 package bsptraining.sort;
 
 import java.util.*;

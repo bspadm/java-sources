@@ -1,3 +1,6 @@
+/**
+ * BSP training Copyright (C) 2008 - 2012
+ */
 package bsptraining.misc;
 
 /**

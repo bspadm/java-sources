@@ -6,7 +6,7 @@ package bsptraining.base;
 import java.util.Scanner;
 
 /**
- * This runnable program demonstrates a simple input method via console
+ * This runnable program demonstrates the simplest input method via console.
  *
  * @author jelsen
  */
@@ -24,11 +24,11 @@ public class InputMain {
       String returnString = "";
       // note: characters use single quotes
       char choice = ' ';
-      Scanner In = new Scanner(System.in);
+      Scanner input = new Scanner(System.in);
       while (choice != '1' && choice != '2') {
          // note: print without new line
          System.out.print("Please choose: TRADE (1) or T24 (2) : ");
-         inputString = In.next();
+         inputString = input.next();
          choice = inputString.charAt(0);
          if (choice != '1' && choice != '2') {
             // note: output via standard error is printed red
