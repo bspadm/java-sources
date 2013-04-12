@@ -59,9 +59,9 @@ public class ObjectExample {
       }
    }
 
-   class subclass {
+   class SubClass {
    }
 
-   static class innerclass {
+   static class InnerClass {
    }
 }
