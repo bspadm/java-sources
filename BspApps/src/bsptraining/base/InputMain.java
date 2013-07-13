@@ -1,33 +1,40 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2013
  */
 package bsptraining.base;
 
 import java.util.Scanner;
 
 /**
- * This runnable program demonstrates the simplest input method via console.
- *
+ * This runnable program demonstrates:<br>
+ * - a simple input method via console<br>
+ * - a nel with abort option<br>
+ * - String constants
  * @author jelsen
  */
 public class InputMain {
 
+   private static final String END = "END";
+   private static final String LOOP = "LOOP";
+
    public static void main(String[] args) {
-      String s = yourChoice();
-      // note: print with new line
-      System.out.println(s);
+      while (!yourChoice().equals(END)) {
+         continue; // this is optional for better reading only
+      }
+      // this is optional for shell return code 9 istead of 0
+      System.exit(9);
    }
 
    private static String yourChoice() {
       // note: strings use double quotes
       String inputString;
-      String returnString = "";
+      String returnString;
       // note: characters use single quotes
       char choice = ' ';
       Scanner input = new Scanner(System.in);
       while (choice != '1' && choice != '2') {
          // note: print without new line
-         System.out.print("Please choose: TRADE (1) or T24 (2) : ");
+         System.out.print("Please choose: " + END + " (1) or " + LOOP + " (2) : ");
          inputString = input.next();
          choice = inputString.charAt(0);
          if (choice != '1' && choice != '2') {
@@ -35,12 +42,13 @@ public class InputMain {
             System.err.println("Wrong option!");
          }
       }
-      // note: one line of code needs no brackets
-      if (choice == '1') {
-         returnString += "Your choice: TRADE";
+      if (choice == '1') { // note: brackets are optional for one-line-code
+         returnString = END;
       } else {
-         returnString += "Your choice: T24";
+         returnString = LOOP;
       }
+      // note: print with new line on the console
+      System.out.println(returnString);
       // return value
       return returnString; // note: method exits here
    }
