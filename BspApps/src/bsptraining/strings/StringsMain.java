@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2014
  */
 package bsptraining.strings;
 
@@ -10,16 +10,18 @@ public class StringsMain {
    /**
     * This runnable program concatenates and splits a string MAX times by three
     * different methods.<br> The time for the action is printed out.<br>
-    * Demonstrates that the fastest method is StringBuilder.
+    * Demonstrates that the fastest method is StringBuilder.<br>
+    * Secondly it demonstrates simple String replacements.
     *
     * @author jelsen
     */
    public static void main(String[] args) {
       System.out.println("Test starting with " + MAX + " concats and splits...");
-      stringTest();
+      stringConcatDemo();
+      stringReplaceDemo();
    }
 
-   private static void stringTest() {
+   private static void stringConcatDemo() {
       String[] stringArray;
 
       // Method 1: String (base class)
@@ -58,5 +60,13 @@ public class StringsMain {
       stringArray = stringBuilder.toString().split("\\+");
       System.out.println("Time for StringBuilder: " + (t2 - t1) + " ms");
 
+   }
+
+   private static void stringReplaceDemo() {
+      String in = "ab[cd]ef";
+      String out = in.replace("[", "");
+      out = out.replace("]", "");
+      System.out.println("in-String remains the same: " + in);
+      System.out.println("replacement takes place in out-String only: " + out);
    }
 }
