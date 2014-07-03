@@ -1,4 +1,7 @@
 GIT Repository - github - Help
 
-* It seems neccessary to "push" to the github, commit only has no effect
+1) check in:
+
+* Commit the changes (git -> show changes -> commit)
+* "push" them to the github (git -> remote -> push)
 
