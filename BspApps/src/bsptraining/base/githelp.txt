@@ -1,0 +1,4 @@
+GIT Repository - github - Help
+
+* It seems neccessary to "push" to the github, commit only has no effect
+
