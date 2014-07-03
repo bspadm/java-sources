@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2013
+ * BSP training Copyright (C) 2008 - 2014
  */
 package bsptraining.base;
 
@@ -41,11 +41,11 @@ public class Choice {
             System.err.println("Wrong option!");
          }
       }
-      if (choice == '1') { // note: brackets are optional for one-line-code
+      if (choice == '1')  // note: brackets are optional for one-line-code
          returnString = END;
-      } else {
+      else
          returnString = LOOP;
-      }
+
       // note: print with new line on the console
       System.out.println(returnString);
       // return value
