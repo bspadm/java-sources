@@ -1,0 +1,7 @@
+GIT Repository - github - Help
+
+1) check in:
+
+* Commit the changes (git -> show changes -> commit)
+* "push" them to the github (git -> remote -> push)
+

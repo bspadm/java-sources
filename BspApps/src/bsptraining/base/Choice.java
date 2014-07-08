@@ -8,21 +8,20 @@ import java.util.Scanner;
 /**
  * This runnable program demonstrates:<br>
  * - a simple input method via console<br>
- * - a nel with abort option<br>
- * - String constants
+ * - returning values to the shell<br>
  * @author jelsen
  */
-public class InputMain {
+public class Choice {
 
    private static final String END = "END";
    private static final String LOOP = "LOOP";
 
    public static void main(String[] args) {
-      while (!yourChoice().equals(END)) {
-         continue; // this is optional for better reading only
+      if (!yourChoice().equals(END)) {
+         System.exit(0); // This means: LOOP for the shell
+      } else {
+         System.exit(9); // This means: END for the shell
       }
-      // this is optional for shell return code 9 istead of 0
-      System.exit(9);
    }
 
    private static String yourChoice() {
@@ -42,11 +41,11 @@ public class InputMain {
             System.err.println("Wrong option!");
          }
       }
-      if (choice == '1') {
+      if (choice == '1')  // note: brackets are optional for one-line-code
          returnString = END;
-      } else {
+      else
          returnString = LOOP;
-      }
+
       // note: print with new line on the console
       System.out.println(returnString);
       // return value
