@@ -5,3 +5,6 @@ GIT Repository - github - Help
 * Commit the changes (git -> show changes -> commit)
 * "push" them to the github (git -> remote -> push)
 
+2) check out:
+
+* "pull" the changes from the github (git -> remote -> pull)
