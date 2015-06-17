@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.misc;
 
@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
- * This runnable program demonstrates some ways to format numbers
+ * This runnable program demonstrates some ways to format numbers.
  *
  * @author jelsen
  */
@@ -62,8 +62,8 @@ public class NumbersMain {
       // Note that in java both is calculated from time
       Calendar cal = Calendar.getInstance();
       SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
-      System.out.println(formater.format(cal.getTime()).toString());
+      System.out.println(formater.format(cal.getTime()));
       formater = new SimpleDateFormat("HH:mm:ss");
-      System.out.println(formater.format(cal.getTime()).toString());
+      System.out.println(formater.format(cal.getTime()));
    }
 }

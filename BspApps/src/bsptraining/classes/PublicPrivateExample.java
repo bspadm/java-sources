@@ -1,20 +1,18 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.classes;
 
 /**
- * This class shows the different access levels of variables and methods
+ * This class shows the different access levels of variables and methods.
  *
  * @author jelsen
  */
 public class PublicPrivateExample {
-   // note: warning "never read"
-
-   private static int privateVariable = 1;
    // note: warnings can be suppressed (eclipse notation)
+   // does not work in NetBeans better avoid them
    @SuppressWarnings("unused")
-   private static int unusedVariable = 0;
+   private static final int unusedVariable = 0;
    protected static int protectedVariable = 2;
    public static int publicVariable = 3;
 

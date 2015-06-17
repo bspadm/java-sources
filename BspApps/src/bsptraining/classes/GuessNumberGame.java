@@ -1,8 +1,9 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.classes;
 
+import java.awt.HeadlessException;
 import javax.swing.JOptionPane;
 
 /**
@@ -11,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class GuessNumberGame {
 
-   private int maxRandom;
+   private final int maxRandom;
    private static final int MAX_TRY = 10;
 
    public GuessNumberGame(int maxRandom) {
@@ -42,7 +43,9 @@ public class GuessNumberGame {
                guessed = false;
             }
             tryInt++;
-         } catch (Exception e) {
+         } catch (HeadlessException e) {
+            JOptionPane.showMessageDialog(null, "Incompatible input device!", input, JOptionPane.ERROR_MESSAGE);
+         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Value not numeric!", input, JOptionPane.ERROR_MESSAGE);
          }
       } while (tryInt < MAX_TRY && !guessed);

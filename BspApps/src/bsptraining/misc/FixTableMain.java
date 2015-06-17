@@ -1,5 +1,5 @@
 /**
- * BSP 2010
+ * BSP training Copyright (C) 2010 - 2015
  */
 package bsptraining.misc;
 
@@ -74,7 +74,7 @@ public class FixTableMain extends JFrame {
    private class Table extends JTable {
 
       private static final long serialVersionUID = 1L;
-      private String[] rowHeaders = new String[]{"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
+      private final String[] rowHeaders = new String[]{"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
 
       Table() {
          // Fill some data

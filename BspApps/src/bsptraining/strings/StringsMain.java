@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2014
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.strings;
 
@@ -22,7 +22,7 @@ public class StringsMain {
    }
 
    private static void stringConcatDemo() {
-      String[] stringArray;
+      String[] stringArray; // how to define an array of strings
 
       // Method 1: String (base class)
       String s1 = "";
@@ -40,7 +40,7 @@ public class StringsMain {
       stringArray = s1.split("\\+");
       System.out.println("Time for String: " + (t2 - t1) + " ms");
 
-      // Method 2: StringBuffer (thread-save)
+      // Method 2: StringBuffer (thread-save) provokes a warning in NetBeans
       StringBuffer stringBuffer = new StringBuffer("BSP");
       t1 = System.currentTimeMillis();
       for (long l = 0; l < MAX - 1; l++) {

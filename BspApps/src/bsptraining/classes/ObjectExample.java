@@ -37,7 +37,7 @@ public class ObjectExample {
    public void stringExample(String value1, String value2) {
       System.out.println("DatatypeExample.stringExample: Value 1 = " + value1 + ", Value 2 = " + value2);
       boolean b;
-      b = (value1 == value2);
+      b = (value1 == value2); // do not use the native comparator it provokes a warning
       System.out.println("DatatypeExample.stringExample: (value1 == value2): " + b);
 
       b = value1.equals(value2);

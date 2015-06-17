@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.misc;
 
@@ -51,7 +51,7 @@ public class SciHelperMain {
       String[] dotsplit = left.split("\\.");
       String returnDigit = dotsplit[0];
       String returnNumber = dotsplit[1];
-      Integer digits = new Integer(returnNumber.length());
+      Integer digits = returnNumber.length();
       Integer expo = new Integer(esplit[1]);
       Integer zeroes;
       if (expo > 0)

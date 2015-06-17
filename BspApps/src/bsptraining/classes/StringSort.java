@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.classes;
 
@@ -10,8 +10,8 @@ package bsptraining.classes;
  */
 public class StringSort {
 
-   private String[] unsorted;
-   private String[] sorted;
+   private final String[] unsorted;
+   private final String[] sorted;
 
    public StringSort(String... strings) {
       this.unsorted = strings;
@@ -33,8 +33,8 @@ public class StringSort {
    }
 
    public void output() {
-      for (int i = 0; i < sorted.length; i++) {
-         System.out.println(sorted[i]);
+      for (String sorted1 : sorted) {
+         System.out.println(sorted1);
       }
    }
 }

@@ -1,12 +1,12 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.graph;
 
 /**
  * This runnable program draws some graphics.<br> It is based on a simple shape
  * interface.<br> This example shows how to implement interfaces and extend base
- * classes.<br> Testing of package "graph".
+ * classes.
  *
  * @author jelsen
  */
