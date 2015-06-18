@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.misc;
 
@@ -10,8 +10,8 @@ import java.net.URL;
 /**
  * This class demonstrates how to write <i>Doc Comments</i> in java<br> You can
  * use <b>HTML formating</b> and some special tags starting with "@"<br> Hover
- * mouse over
- * <code>getImage</code> and see the result (Eclipse)
+ * mouse over <code>getImage</code> and see the result (Eclipse).<br> Javadoc
+ * comments always start with "/**".
  *
  * @author jelsen
  */
@@ -36,5 +36,13 @@ public class JavadocExample {
       } catch (MalformedURLException e) {
          return null;
       }
+   }
+
+   /**
+    * Demonstrates that a package private variable cannot be used outside
+    * it's package.
+    */
+   public void testPackagePrivateVariable() {
+      // System.out.println(PublicPrivateExample.packagePrivateVariable);
    }
 }

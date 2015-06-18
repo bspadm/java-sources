@@ -15,6 +15,7 @@ public class PublicPrivateExample {
    private static final int unusedVariable = 0;
    protected static int protectedVariable = 2;
    public static int publicVariable = 3;
+   static int packagePrivateVariable = 4;
 
    // note: warning "never used"
    private void unaccessableMethod() {

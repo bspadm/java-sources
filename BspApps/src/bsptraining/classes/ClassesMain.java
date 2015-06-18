@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.classes;
 
@@ -67,6 +67,7 @@ public class ClassesMain {
        * Public-Private example
        */
       System.out.println(PublicPrivateExample.publicVariable);
+      System.out.println(PublicPrivateExample.packagePrivateVariable);
       // privateVariable would not work!
    }
 }
