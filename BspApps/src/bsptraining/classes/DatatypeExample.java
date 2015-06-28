@@ -17,6 +17,8 @@ public class DatatypeExample {
     * defined at first.
     */
    public static final String CONSTANT_VALUE = "CONSTANT_VALUE";
+   public static final char C = '€';
+   //public static final byte B = '€'; error because storage exceeds 1 byte
    private String name;
    private String vorname;
 
