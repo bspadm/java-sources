@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.graph;
 
@@ -19,7 +19,7 @@ public enum ColorEnum {
    CYAN(Color.cyan),
    GRAY(Color.darkGray),
    PINK(Color.pink);
-   private Color c;
+   private final Color c;
 
    private ColorEnum(Color c) {
       this.c = c;

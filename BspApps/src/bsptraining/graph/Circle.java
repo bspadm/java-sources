@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.graph;
 
@@ -7,15 +7,12 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 /**
- * This class implements
- * <code>Shape</code> to be a
- * <code>Circle</code>
- *
+ * This class implements Shape to be a Circle.
  * @author jelsen
  */
 public class Circle implements Shape {
 
-   private double radius;
+   private final double radius;
 
    // Constructor
    public Circle(double radius) {

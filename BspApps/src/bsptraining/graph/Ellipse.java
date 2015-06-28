@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.graph;
 
@@ -7,21 +7,18 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 /**
- * This class implements
- * <code>Shape</code> to be an
- * <code>Ellipse</code>
- *
+ * This class implements Shape to be an Ellipse.
  * @author jelsen
  */
 public class Ellipse implements Shape {
 
-   private double halbachse_a;
-   private double halbachse_b;
+   private final double axis_a;
+   private final double axis_b;
 
    // Constructor
    public Ellipse(double a, double b) {
-      this.halbachse_a = a;
-      this.halbachse_b = b;
+      this.axis_a = a;
+      this.axis_b = b;
    }
 
    @Override
@@ -31,7 +28,7 @@ public class Ellipse implements Shape {
 
    @Override
    public double getPerimeter() {
-      return halbachse_a * halbachse_b * Math.PI;
+      return axis_a * axis_b * Math.PI;
    }
 
    @Override
@@ -47,7 +44,7 @@ public class Ellipse implements Shape {
    @Override
    public void draw(Graphics graphics, Color color) {
       graphics.setColor(color);
-      graphics.drawOval(0, 0, (int) halbachse_a, (int) halbachse_b);
+      graphics.drawOval(0, 0, (int) axis_a, (int) axis_b);
    }
 
    @Override

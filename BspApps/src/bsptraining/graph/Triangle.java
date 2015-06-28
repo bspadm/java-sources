@@ -1,15 +1,19 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.graph;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
+/**
+ * This class implements Shape to be a Triangle.
+ * @author jelsen
+ */
 public class Triangle implements Shape {
 
-   private double a;
-   private double height_a;
+   private final double a;
+   private final double height_a;
 
    // Constructor
    public Triangle(double a, double height_a) {

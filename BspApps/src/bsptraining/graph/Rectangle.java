@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.graph;
 
@@ -7,16 +7,13 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 /**
- * This class implements
- * <code>Shape</code> to be an
- * <code>Ellipse</code>
- *
+ * This class implements Shape to be an Ellipse.
  * @author jelsen
  */
 public class Rectangle implements Shape {
 
-   private double a;
-   private double b;
+   private final double a;
+   private final double b;
 
    // Constructor
    public Rectangle(double a, double b) {
