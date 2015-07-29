@@ -93,7 +93,7 @@ public class FixTableMain extends JFrame {
          setModel(dm);
          // Remove the first (fixed) column
          removeColumn(getColumnModel().getColumn(0));
-         setRowSorter(new TableRowSorter<DefaultTableModel>(dm));
+         setRowSorter(new TableRowSorter<>(dm));
          setRowHeight(20);
          getTableHeader().setReorderingAllowed(true); // default
          setAutoResizeMode(JTable.AUTO_RESIZE_OFF);

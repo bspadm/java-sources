@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2014
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.base;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * This runnable program demonstrates:<br>
  * - a simple input method via console<br>
- * - a nel with abort option<br>
+ * - a NEL with abort option<br>
  * - String constants
  * @author jelsen
  */
@@ -18,10 +18,10 @@ public class InputMain {
    private static final String LOOP = "LOOP";
 
    public static void main(String[] args) {
-      while (!yourChoice().equals(END)) {
-         continue; // this is optional for better reading only
-      }
-      // this is optional for shell return code 9 istead of 0
+      // NEL waiting for END
+      // Note: The Brackets are needed!
+      while (!yourChoice().equals(END)) {}
+      // Sets shell return code 9
       System.exit(9);
    }
 

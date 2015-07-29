@@ -1,5 +1,5 @@
 /**
- * BSP training Copyright (C) 2008 - 2012
+ * BSP training Copyright (C) 2008 - 2015
  */
 package bsptraining.sort;
 
@@ -45,9 +45,9 @@ public class SortMain {
       System.out.println(Arrays.toString(kindArray));
    }
 
+   /** A list allows duplicates. */
    private static void listExample(Kind[] kindArray) {
-      // Create the list (Duplicates OK)
-      List<Kind> list = new LinkedList<Kind>();
+      List<Kind> list = new LinkedList<>();
       list.addAll(Arrays.asList(kindArray));
       // Get the number of elements in the list
       int size = list.size();
@@ -66,26 +66,32 @@ public class SortMain {
       for (Kind k : list) {
          k.addAlter(1);
       }
-      System.out.println(Arrays.toString(kindArray));
+      System.out.println(list + " after add via for");
+      // Increase the age of each child with functional operations since Java 8
+      list.stream().forEach((k) -> {
+         k.addAlter(1);
+      });
+      System.out.println(list + " after add via func");
    }
 
+   /** A set allows no duplicates. */
    private static void sortedSetExample(Kind[] kindArray) {
-      SortedSet<Kind> sortedSet = new TreeSet<Kind>();
+      SortedSet<Kind> sortedSet = new TreeSet<>();
       sortedSet.addAll(Arrays.asList(kindArray));
-      System.out.println(Arrays.toString(kindArray));
-      for (Kind k : sortedSet) {
+      System.out.println(sortedSet + " kindArray as sorted set w/o dups");
+      sortedSet.stream().forEach((k) -> {
          k.addAlter(-1);
-      }
-      System.out.println(Arrays.toString(kindArray));
+      });
+      System.out.println(sortedSet + " after sub via func");
    }
 
    private static void lotto() {
-      List<Integer> allNumbers = new ArrayList<Integer>(49);
+      List<Integer> allNumbers = new ArrayList<>(49);
       for (int i = 0; i < 49; i++) {
          allNumbers.add(i);
       }
       Collections.shuffle(allNumbers);
-      List<Integer> drawnNumbers = new ArrayList<Integer>(6);
+      List<Integer> drawnNumbers = new ArrayList<>(6);
       for (int i = 0; i < 6; i++) {
          drawnNumbers.add(allNumbers.get(i));
       }
