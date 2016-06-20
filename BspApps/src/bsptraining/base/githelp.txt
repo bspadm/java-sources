@@ -1,8 +1,19 @@
-GIT Repository - github - Help
+GIT Repository - github - Help (BspApps\src\bsptraining\base\githelp.txt)
+
+0) create:
+
+* Login to https://github.com/
+* Create a new repository
+* NetBeans:
+* Create an empty project "tmp"
+* "clone" it (team -> git -> clone)
+* Create project yes "real"
+* Delete project "tmp"
+* check in project "real"
 
 1) check in:
 
-* Commit the changes (git -> show changes -> commit)
+* "commit" the changes (git -> show changes -> commit)
 * "push" them to the github (git -> remote -> push)
 
 2) check out:
