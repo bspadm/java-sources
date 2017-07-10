@@ -18,7 +18,7 @@ import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
 /**
- *
+ * A really simple XML Parser with hard-coded XML & XSD.
  * @author fan
  */
 public class ParseXml {
@@ -27,7 +27,7 @@ public class ParseXml {
     * @param args the command line arguments
     */
    public static void main(String[] args) {
-// parse an XML document into a DOM tree
+      // parse an XML document into a DOM tree
       DocumentBuilder parser = null;
       try {
          parser = DocumentBuilderFactory.newInstance().newDocumentBuilder();
