@@ -1,4 +1,4 @@
-package bspapps;
+package bsptraining.xml;
 
 import java.io.File;
 import java.io.IOException;
@@ -36,7 +36,7 @@ public class ParseXml {
       }
       Document document = null;
       try {
-         document = parser.parse(new File("D:\\NetBeans\\Training\\java-sources\\BspApps\\src\\bspapps\\test.xml"));
+         document = parser.parse(new File("D:\\NetBeans\\Training\\java-sources\\BspApps\\src\\bsptraining\\xml\\test.xml"));
       } catch (SAXException ex) {
          Logger.getLogger(ParseXml.class.getName()).log(Level.SEVERE, null, ex);
       } catch (IOException ex) {
@@ -47,7 +47,7 @@ public class ParseXml {
       SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 
       // load a WXS schema, represented by a Schema instance
-      Source schemaFile = new StreamSource(new File("D:\\NetBeans\\Training\\java-sources\\BspApps\\src\\bspapps\\test.xsd"));
+      Source schemaFile = new StreamSource(new File("D:\\NetBeans\\Training\\java-sources\\BspApps\\src\\bsptraining\\xml\\test.xsd"));
       Schema schema = null;
       try {
          schema = factory.newSchema(schemaFile);
