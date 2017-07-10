@@ -16,6 +16,7 @@ GIT Repository - github - Help (BspApps\src\bsptraining\base\githelp.txt)
 
 2) check out:
 
+* [optional "revert" the changes (git -> show changes -> revert)]
 * "pull" the changes from the github (git -> remote -> pull)
 
 3) delete:
