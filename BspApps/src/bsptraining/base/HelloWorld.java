@@ -1,5 +1,6 @@
 /**
  * BSP training Copyright (C) 2008 - 2012
+ * $Id:$
  */
 package bsptraining.base;
 
